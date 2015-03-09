@@ -4,12 +4,25 @@
   "description": "Node.js wrapper for mplayer on linux.",
   "main": "./lib/node-mplayer.js",
   "repository": {
-  	"type": "git",
-  	"url": "https://github.com/loics2/node-mplayer.git"
+    "type": "git",
+    "url": "https://github.com/loics2/node-mplayer.git"
   },
-  "keywords":[
-  	"mplayer", "wrapper"
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "keywords": [
+    "mplayer",
+    "wrapper"
   ],
   "author": "Loïc Stankovic",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.4.0",
+    "mkfifo": "^0.1.1",
+    "q": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "mocha": "^2.2.0"
+  }
 }
